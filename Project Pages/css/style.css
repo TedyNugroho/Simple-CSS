@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 30px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-left .nav-bar {
+  display: flex;
+  list-style: none;
+}
+
+nav .nav-left .nav-bar .nav-item {
+  position: relative;
+}
+
+nav .nav-left .nav-bar .nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  margin-right: 40px;
+}
+
+nav .nav-left .nav-bar .nav-link:hover {
+  color: gray;
+}
+
+nav .nav-left .nav-bar .active {
+  font-size: 1.2rem;
+  margin-top: -3px;
+  font-weight: 700;
+}
+
+nav .nav-left .nav-bar .notification {
+  background-color: rgba(255, 1, 1, 0.8);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  right: 21px;
+}
+
+nav .nav-right a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav .nav-right .btn-upgrade {
+  margin-right: 30px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+nav .nav-right .profile {
+  background-color: #db5c9a;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  margin-top: 25px;
+}
+
+main .left-side {
+  display: flex;
+  flex-direction: column;
+  background-color: #262635;
+  flex: 0.5;
+  padding: 15px 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  border-radius: 15px;
+  height: 700px;
+  max-height: 700px;
+}
+
+main .left-side .title {
+  font-weight: 500;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #9f9fbb;
+  margin: 5px 0px 15px 0px;
+}
+
+main .left-side .project {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+main .left-side .project .tag {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+main .left-side .project .text {
+  font-size: 0.65rem;
+  margin-top: -1px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+main .left-side .project .tag-1 {
+  background-color: #FCB457;
+}
+
+main .left-side .project .tag-2 {
+  background: #F27B56;
+}
+
+main .left-side .project .tag-3 {
+  background: #58AEFF;
+}
+
+main .left-side .project .tag-4 {
+  background: #B058FF;
+}
+
+main .left-side .project .tag-5 {
+  background: #97CC44;
+}
+
+main .left-side .project .tag-6 {
+  background: #F65698;
+}
+
+main .left-side .project .view {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: #4782BD;
+  margin-left: 20px;
+}
+
+main .left-side .teams {
+  margin-top: auto;
+}
+
+main .left-side .teams .title {
+  font-size: 0.6rem;
+  color: #9f9fbb;
+}
+
+main .left-side .teams .box {
+  background-color: #3A3C53;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+main .left-side .teams .box .sub-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+main .left-side .teams .box .text {
+  font-size: 0.6rem;
+  color: #cccccc;
+  margin: 17px 0px;
+  line-height: 1.4;
+}
+
+main .left-side .teams .box .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+main .right-side {
+  flex: 2;
+  padding: 30px;
+  position: relative;
+}
+
+main .right-side .title {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+main .right-side .boxs {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+main .right-side .boxs .box,
+main .right-side .boxs .new {
+  margin-right: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-left: -10px;
+  width: 120px;
+}
+
+main .right-side .boxs .box div,
+main .right-side .boxs .new div {
+  color: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+main .right-side .boxs .box .inside,
+main .right-side .boxs .new .inside {
+  text-align: center;
+}
+
+main .right-side .boxs .box small,
+main .right-side .boxs .new small {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.65rem;
+  color: #000;
+  font-weight: 500;
+}
+
+main .right-side .boxs .box .color-1,
+main .right-side .boxs .new .color-1 {
+  background-color: #58AEFF;
+}
+
+main .right-side .boxs .box .color-2,
+main .right-side .boxs .new .color-2 {
+  background-color: #FF8158;
+}
+
+main .right-side .boxs .box .color-3,
+main .right-side .boxs .new .color-3 {
+  background-color: #FFB658;
+}
+
+main .right-side .boxs .box .color-4,
+main .right-side .boxs .new .color-4 {
+  background-color: #B058FF;
+}
+
+main .right-side .boxs .box .color-5,
+main .right-side .boxs .new .color-5 {
+  background-color: #fff;
+  border: 1px solid gray;
+  color: #888;
+}
+
+main .right-side .bottom-side {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+main .right-side .bottom-side .dots {
+  cursor: pointer;
+  margin-top: -2px;
+}
+
+main .right-side .bottom-side .dots span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #888;
+  border-radius: 50%;
+}
+
+main .right-side .bottom-side .privacy {
+  display: inline-block;
+  margin: 0px 25px;
+  cursor: pointer;
+}
+
+main .right-side .bottom-side .question {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #888;
+  border-radius: 50%;
+  padding: 3px 8px;
+  margin-top: -4px;
+  cursor: pointer;
+}
